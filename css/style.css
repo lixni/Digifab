@@ -2,7 +2,7 @@
   margin: 1px;
  /* background-color: lightgray; */
  /* background-color: #394F8A;*/
- background-color: #4A5FC1;
+  background-color: #4A5FC1;
   display: grid;
   grid-template-columns:4fr 4fr;
   grid-template-rows: auto;
