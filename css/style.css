@@ -1,6 +1,8 @@
  body{
   margin: 1px;
-  background-color: lightgray;
+ /* background-color: lightgray; */
+ /* background-color: #394F8A;*/
+ background-color: #4A5FC1;
   display: grid;
   grid-template-columns:4fr 4fr;
   grid-template-rows: auto;
@@ -75,7 +77,9 @@ article{
     font-size: 35px;
     overflow: hidden;
     font-family: Helvetica, Arial, sans-serif;
-    background-color: rgba(83, 71, 71, 0.418);
+    /*background-color: rgba(83, 71, 71, 0.418);*/
+    background-color: #394F8A;
+
     align-self: center;
   }
   
@@ -117,7 +121,7 @@ article{
 
 
 .button{
-  background-color:rgba(83, 71, 71, 0.418);
+  background-color:rgba(83, 71, 71, 0.418); 
   border: none;
   color: rgb(2, 2, 2);
   padding: 15px 30px;
@@ -139,6 +143,23 @@ article{
   
  
 }
+
+.picturelarge {
+
+  width: 45em;
+  height: auto;
+
+
+}
+
+.backimg{
+
+background-image: url("/img/3d_printer.png");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+
+}   
 .figures{
     width: 100%;
     height: auto;
@@ -180,7 +201,8 @@ main {
 footer{
   grid-area: footer;
   margin:25px 15px;
-  background-color: rgba(83, 71, 71, 0.418);
+  /*background-color: rgba(83, 71, 71, 0.418);*/
+  background-color: #394F8A;
   text-align: center;
   display: flex;
   flex-direction: column;
