@@ -146,6 +146,15 @@ article{
  
 }
 
+.picturemed {
+
+  width: 100%;
+  height: auto;
+  max-width: 25em;
+
+
+}
+
 .picturelarge {
 
   width: 100%;
@@ -161,6 +170,10 @@ article{
     max-width: 50em;
    
 }
+
+
+
+
 
 header{  
   text-align: center;
