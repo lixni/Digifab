@@ -327,3 +327,20 @@ footer{
   top: -4px;
   left: 30px;
 }
+
+
+/* Style buttons */
+.btn {
+  background-color: #394F8A;
+  border: none;
+  color: black;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: RoyalBlue;
+}
