@@ -58,46 +58,80 @@
 
             <article tabindex="1">
 
-                <h2>Lorem ipsum</h2>
-
-
-
+                <h2>Arduino prosjekt med temperatur og lyssensor</h2>
 
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna
-                    aliqua. A iaculis at erat pellentesque adipiscing commodo elit. Dolor sit amet consectetur
-                    adipiscing elit ut aliquam
-                    purus sit. Faucibus interdum posuere lorem ipsum dolor sit amet consectetur adipiscing. Aliquam
-                    etiam erat velit
-                    scelerisque. Eu consequat ac felis donec et odio pellentesque diam. Sem fringilla ut morbi tincidunt
-                    augue interdum
-                    velit. Quam pellentesque nec nam aliquam sem et tortor. Odio euismod lacinia at quis risus sed
-                    vulputate odio. Ultrices
-                    in iaculis nunc sed augue. Nisl vel pretium lectus quam. Libero id faucibus nisl tincidunt eget
-                    nullam. Eleifend donec
-                    pretium vulputate sapien nec. Donec et odio pellentesque diam volutpat commodo sed egestas egestas.
-                    Consequat id porta
-                    nibh venenatis. Tortor condimentum lacinia quis vel eros donec ac. Ac turpis egestas maecenas
-                    pharetra convallis.
+                    Prosjektet mitt vil bygge videre på sluttprosjektet. Der jeg kommer til å bruke en temperatur sensor 
+                    for å måle temperaturen i nærliggende område og en lys sensor for å måle hvor mye lys som kommer til.
+                    Siden jeg som sakt skal bruke en temperatur sensor og lys sensor ønsker jeg nå hvertfall å kunne vise 
+                    dette uten å være koplett til en pc, og dette skal jeg gjøre ved hjelp av en LCD-skjerm. Alle delene i dette prosjektet
+                    er i fra Arduino starter kitet vi fikk utdelt ifra skolen.
+
+                </p>
+                
+
+                <p>
+                    Her er resultatet av prosjektet og hvordan koblingene er gjort.  
+                    <br>
+                    <br>
+                <img class="picturemed" src="./img/Arduino.jpeg" alt="Arduino resultatet">
+                    <br>
+                </p>
+                
+                <img class="picturemed" src="./img/Arduino_kode.png" alt="Arduino Koden">
+                <p>
+                    I setup blir lcd-skjerm startet hvor vi forteller hvor mange koloner og rader skjermen har.
+                    Slik at vi kan bruke setCursor til å fortelle hvor på LCD-skjerm teksten skal vises, altså hvor teksten begynner.
+                    Ved bruk av lcd.setCursor(0,1), sier vi til LCD-skjerm at den skal begynne på kolone 0 og på rad 1. 
+                    <br>
+                    Loop funksjonen er der vi henter inn verdiene fra sensorene og konvertere de slik at de kan vises på LCD-skjermen.
+                    <br>
+                    Brukte map() funksjonen som er innebyd i Arduino IDE for å konvertere verdiene til leselige 
+                    verdier som kan vises på en LCD-skjerm. 
+                    <br>
+                    map(value, fromLow, fromHigh, toLow, toHigh)
+                    <br>
+                    Delay funksjonen er der for å gi sensorene tid til å hente inn verdiene og er satt til å være 0.5 sekunder(500ms).
 
                 </p>
                 <p>
-                    Rhoncus est pellentesque elit ullamcorper. Commodo odio aenean sed adipiscing diam donec adipiscing
-                    tristique risus.
-                    Urna cursus eget nunc scelerisque viverra mauris. Et molestie ac feugiat sed lectus. Augue mauris
-                    augue neque gravida in
-                    fermentum et sollicitudin. Egestas purus viverra accumsan in nisl. Ornare arcu odio ut sem nulla
-                    pharetra diam sit amet.
-                    Egestas purus viverra accumsan in nisl nisi scelerisque. Tincidunt ornare massa eget egestas purus
-                    viverra accumsan in.
-                    Vitae nunc sed velit dignissim sodales ut eu. Ut diam quam nulla porttitor massa id neque aliquam.
-                    Tincidunt vitae
-                    semper quis lectus nulla at volutpat. Proin sed libero enim sed. Aenean vel elit scelerisque mauris
-                    pellentesque
-                    pulvinar.
+                    <h3>Pin layout</h3>
+                    Pins fra LCD
+                    <ul style="list-style: none;">
+                        <li>Pin 1 - Jord</li>
+                        <li>Pin 2 - 5V</li>
+                        <li>Pin 3 - Potensiometer</li>
+                        <li>Pin 4 - Arduino pin 12</li>
+                        <li>Pin 5 - Arduino pin 7</li>
+                        <li>Pin 6 - Arduino pin 11</li>
+                        <li>Pin 11 - Arduino pin 10</li>
+                        <li>Pin 12 - Arduino pin 9 </li>
+                        <li>Pin 13 - Arduino pin 8</li>
+                        <li>Pin 14 - Arduino pin 7</li>
+                        <li>Pin 15 - 5V igjennom en 220 Ohm resistor</li>
+                        <li>Pin 16 - Jord</li>
+                    
+                    </ul>
+                    Ben fra potensiometer(2 ben mot arduino)
+                    <ul style="list-style: none;">
+                        <li>Ben 1 - 5V</li>
+                        <li>Ben 2 - Jord</li>
+                        <li>Ben 3 - LCD pin 3</li>
+                    </ul>
+                    Ben fra temperatur sensor (Flat side mot arduino)
+                    <ul style="list-style: none;">
+                        <li>Ben 1 - 5V</li>
+                        <li>Ben 2 - Arduino A0</li>
+                        <li>Ben 3 - Jord</li>
+                    </ul>
+                    Ben fra Lys sensor
+                    <ul style="list-style: none;">
+                        <li>Langt ben -5V </li>
+                        <li>Kort ben - 10k Ohm resistor igjennom jord og en kobling til Arduino A1</li>
+                    </ul>
+                    
+                    </p>
 
-                </p>
             </article>
 
         </section>
