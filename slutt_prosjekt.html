@@ -58,47 +58,161 @@
 
             <article tabindex="1">
 
-                <h2>Lorem ipsum</h2>
+                <h2>Hydropnoisk hage</h2>
 
 
 
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna
-                    aliqua. A iaculis at erat pellentesque adipiscing commodo elit. Dolor sit amet consectetur
-                    adipiscing elit ut aliquam
-                    purus sit. Faucibus interdum posuere lorem ipsum dolor sit amet consectetur adipiscing. Aliquam
-                    etiam erat velit
-                    scelerisque. Eu consequat ac felis donec et odio pellentesque diam. Sem fringilla ut morbi tincidunt
-                    augue interdum
-                    velit. Quam pellentesque nec nam aliquam sem et tortor. Odio euismod lacinia at quis risus sed
-                    vulputate odio. Ultrices
-                    in iaculis nunc sed augue. Nisl vel pretium lectus quam. Libero id faucibus nisl tincidunt eget
-                    nullam. Eleifend donec
-                    pretium vulputate sapien nec. Donec et odio pellentesque diam volutpat commodo sed egestas egestas.
-                    Consequat id porta
-                    nibh venenatis. Tortor condimentum lacinia quis vel eros donec ac. Ac turpis egestas maecenas
-                    pharetra convallis.
+                I slutt prosjektet valgte jeg å lage en hydroponisk hage. Som er dyrking av planter uten bruken av jord, men heler dyrkes i vann med tilsatt næring i.
+                Med en nettside for å kunne se målinger og om det er lavt vann. Det er målinger for temperatur, lys,
+                lavt vannstandsmåling, gas og fuktighet i luften.  
+                </p>
+                <p>
+                Det var tiltenkt å ha et solcellepanel for strøm og en powerbank slik at det skulle kunne lagres strøm, og fordi kan ESP ha
+                målinger selv om det er mørkt eller at solpanelet ikke får sol på seg. Dette ble det devserre ikke en realitet grunnet mangel på tid og utstyr. 
+
+                </p>
+
+
+                <p>
+                Målet med prosjektet er å kunne dyrke planter på en enkelt og areal effektiv måte. 
+                Det for å senke terskelen for å dyrke planter selv. Det er mulig å plante alle type grønneplanter, f.eks totamter, isbergsalat, urter, osv. 
+                Dette kan medføre at det blir bedre innklima, mindre vannbruk, potensielt mindre mat som blir kastet 
+                og mindre mat som skal fraktes over lengre distanser. 
+                </p>
+                <p>
 
                 </p>
                 <p>
-                    Rhoncus est pellentesque elit ullamcorper. Commodo odio aenean sed adipiscing diam donec adipiscing
-                    tristique risus.
-                    Urna cursus eget nunc scelerisque viverra mauris. Et molestie ac feugiat sed lectus. Augue mauris
-                    augue neque gravida in
-                    fermentum et sollicitudin. Egestas purus viverra accumsan in nisl. Ornare arcu odio ut sem nulla
-                    pharetra diam sit amet.
-                    Egestas purus viverra accumsan in nisl nisi scelerisque. Tincidunt ornare massa eget egestas purus
-                    viverra accumsan in.
-                    Vitae nunc sed velit dignissim sodales ut eu. Ut diam quam nulla porttitor massa id neque aliquam.
-                    Tincidunt vitae
-                    semper quis lectus nulla at volutpat. Proin sed libero enim sed. Aenean vel elit scelerisque mauris
-                    pellentesque
-                    pulvinar.
+                    Noen fordeler med Hydropnoisk hage:
+                <ul style="list-style: none;">
+                    <li>Plantene vokser raskere, og bærer raske og mer frukt</li>
+                    <li>Mulig å dyrke ulike planter i samme boks</li>
+                    <li>Slipper jordsøl og slipper å håndtere jord</li>
+                    <li>Tar liten plassen og er mulig å ha både ute og inne</li>
+                </ul>
+                </p>
+                <h3>Prototypen</h3>
+                <p>
+                    <img class="picturemed" src="./img/konsept.png" alt="konsept">
+                    <br>
+                    Konsepte av prototypen. Dette var sånn det var tiltenkt at produktet skulle se ut. Med solcelle panel i fronten (det blå på den svarte boksen), den svarte boksen som er casen til elektronikken og skulle ha en powerbank inni.
+                    På toppen kan vi se plante kurven hvor planten skal stå i. Det blået inni i boksen indikerer vann og den svarte streken er vannstandsmåleren. 
+                </p>
+                <p>
+                    Prototypen ble til slutt dette: 
+                    <br>
+                    <img class="picturemed" src="./img/prototype.png" alt="Protoype">
+                </p>
+                <p>
+                    Nederst på siden er det mulig å laste ned STL-filene og koden-filen for å kunne lage dette prosjektet selv.
+                </p>
+            </article>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/qEOtM-g59M4" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            <article tabindex="2">
+                <h3>Viderutvikling</h3>
+                <p>
+                    Lys sensoren virker ikke helt optimalt slik den står nå, det ble gjort noen design valg ved vannstandsmåleren som gjorde at det ikke kom
+                    like mye lys som tiltenkt til sensoren. Men dette er det en enkel fiks for, installere en egen lyssensor(photocelle) som kan hente inn lys i fra toppen av casen.
+                    <br>
+                    For videreutvikling vile jeg ha fått på plass solcellepanelet og powerbanken slik at hele systemet er selvforsynt. Dette kan gjøres ved
+                    å koble et solecellepanel f.eks <a href="https://www.adafruit.com/product/5367" target="_blank">5V 5W solar panel - Voltaic P105</a> 
+                    og en charger <a href="https://www.adafruit.com/product/4755" target="_blank">Adafruit Universal USB/DC/Solar Lithium Ion/Polymer charger - bq24074</a> sammen med et batteri 
+                    <a href="https://www.adafruit.com/product/2011" target="_blank">Lithum Ion Battery - 3.7V 200mAh</a>. Solcellepanelet kan kobles til charger(barreljack), charger(LiPo batt) kan kobles til batteriet og ESP32 kan kobles til charger(USB).
+                    <br>
+                    Ut ifra hvilket type planter som skal plantes kan det være nødvendig å ha lys som passer på at plantene får nok lys. Dette kan løses ved å ha et lys egnet for planter(growing light), for eksempel LED stripe/lyspære som kan styres av ESP32.
+                    <br>
+                    Viderføre målingene for vannstanden med å ha flere målepunkt for å kunne se hvor mye vann som er i boksen til en vær tid eller laget et nytt og bedre system for disse målingene.
+                    <br>
+                    Utvikle et system for å kunne måle næringen i vannet. Dette kan kombineres med automatisk påfylling av vann og næring.
+                </p>
+            </article>
+            <article tabindex="3">
+                <h3>Design og utstyr</h3>
+                <p>
+                    Boksen er bygget ved hjelp av å laserkutte pleksiglass. Selve boksen er laget ved hjelp av 
+                    <a href="https://www.makercase.com/#/" target="_blank">Makercase</a>
+                    og det ble lagt inn et hull for planten ved hjelp av inkscape.
+                    <br>
+                    Ved hjelp av 3D printing ble det laget en case for ESP32 boardet, kurv for planten og vannstandsmåleren.
+                    Som ble designet ved hjelp av Fusion360 og er designet selv. 
+                    <br>
 
+                    <img class="picturesmall" src="./img/Ball.png" alt="Ball">
+                    <br>
+                    Ball til vannstandsmåleren
+                    <br>
+                    <img class="picturesmallheight" src="./img/Ball_holder.png" alt="Vannstandsmåler">
+                    <br>
+                    Vannstandsmåleren
+                    <br> 
+                    <img class="picture" src="./img/Plant_basket.png" alt="Kurv for planent">
+                    <br>
+                    Kurv for planten
+                    <br>
+                    <img class="picture" src="./img/case.png" alt="Case">
+                    <br>
+                    Case for ESP32
+                    <br>
+                    <img class="picture" src="./img/Hydro_boks.png" alt="Hydro Boks">
+                    <br>
+                    Hydrofonisk boks
+                </p>
+                <p>
+                    
+                    <ul style="list-style: none;">
+                        Inspirasjon til nettsiden ble hentet ifra:
+                        <li><a href="https://electropeak.com/learn/create-a-web-server-w-esp32/" target="_blank">Electropeack - Create a webserver with esp32</a></li>
+                        <li><a href="https://randomnerdtutorials.com/esp32-esp8266-plot-chart-web-server/"
+                                target="_blank">randomnerdtutorials - Esp32 plot chat web server</a></li>
+                        <li><a href="https://github.com/G6EJD/ESP32_Data_Logging_Webserver" target="_blank">github av G6EJD - Esp32 data logging webserver</a></li>
+                    
+                    </ul>
+                    For grafen ble det brukt javascript og google graphs. 
+                    <br>
+                    <img class="picturelarge" src="./img/Website.png" alt="Website">
+                    <br>
+                    Nettsiden for å se målinger
+                </p>
+                <p>
+                    <h3>Deler brukt</h3>
+                    Deler som er brukt til dette prosjektet er:
+                <ul style="list-style: none;">
+                <li><a href="https://www.adafruit.com/product/466" target="_blank">VCNL4010 Proximity/Light sensor</a></li>
+                <li><a href="https://learn.adafruit.com/adafruit-bme680-humidity-temperature-barometic-pressure-voc-gas" target="_blank">Adafruit BME680</a></li>
+                <li><a href="https://www.adafruit.com/product/3591" target="_blank">Adafruit HUZZAH32</a></li>
+                <li><a href="https://www.adafruit.com/product/64" target="_blank">Half sized Breadboard</a> </li>
+
+                </ul>
+                </p>
+                <p>
+                    Elektronikken er koblet sammen ved hjelp av en breadboard og koblet til ESP32 boardet. Og ser slik ut:
+                    <br>
+                    <img class="picture" src="./img/ESP32-I-Case.png" alt="Elektronikk">
                 </p>
             </article>
 
+            <a href="./Slutt_prosjekt_filer/STL/ball v1.stl" download>
+                <button class="btn"><i class="fa fa-download"></i> Ball Download</button>
+            </a>
+            <a href="./Slutt_prosjekt_filer/STL/ball_holder v2.stl.stl" download>
+                <button class="btn"><i class="fa fa-download"></i> Vannstandsmåler Download</button>
+            </a>
+            <a href="./Slutt_prosjekt_filer/STL/basket_plant v1.stl" download>
+                <button class="btn"><i class="fa fa-download"></i> Kurv for planten Download</button>
+            </a>
+            <a href="./Slutt_prosjekt_filer/STL/case_holder v5.stl" download>
+                <button class="btn"><i class="fa fa-download"></i> Case Download</button>
+            </a>
+            <a href="./Slutt_prosjekt_filer/Arduino_Kode/esp32_digifab_nettside/esp32_digifab_nettside.ino" download>
+                <button class="btn"><i class="fa fa-download"></i> Kode Download</button>
+            </a>
+            <a href="./Slutt_prosjekt_filer/STL/Hydro_boks.pdf" download>
+                <button class="btn"><i class="fa fa-download"></i> Hydro boks Download</button>
+            </a>
         </section>
 
 
